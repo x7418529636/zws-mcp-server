@@ -1,0 +1,15 @@
+{
+  "name": "zws-mcp-server",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "MCP server that proxies the ZWS_BAPI_SALESORDER_CREATE SOAP endpoint",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.2.0",
+    "zod": "^4.0.0"
+  }
+}
