@@ -8,6 +8,7 @@ MCP server that proxies the SAP `ZBAPI_SALESORDER_CREATE` SOAP endpoint defined 
 
 ## Run
 - Start the server on stdio: `npm start`
+- Run via npx (after publishing): `npx zws-mcp-server`
 - The MCP tool exposed: `createSalesOrder`
 
 ## Tool arguments
@@ -37,3 +38,10 @@ MCP server that proxies the SAP `ZBAPI_SALESORDER_CREATE` SOAP endpoint defined 
 ```
 
 The tool returns the SOAP response body and HTTP status. Adjust `endpoint`, `username`, `password`, or `timeoutMs` per call if needed.
+
+## Publish to npm
+- Ensure the package name is available: `npm view zws-mcp-server`
+- Login: `npm login`
+- Check published files: `npm publish --dry-run`
+- Bump version: `npm version patch`
+- Publish: `npm publish`

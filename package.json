@@ -8,8 +8,33 @@
     "start": "node src/index.js",
     "dev": "node src/index.js"
   },
+  "bin": {
+    "zws-mcp-server": "src/index.js"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "zws_bapi_salesorder_create_binding.xml"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.2.0",
     "zod": "^4.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x7418529636/zws-mcp-server.git"
+  },
+  "keywords": [
+    "zws-mcp-server"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/x7418529636/zws-mcp-server/issues"
+  },
+  "homepage": "https://github.com/x7418529636/zws-mcp-server#readme"
 }
